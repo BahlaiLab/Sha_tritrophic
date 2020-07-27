@@ -1,16 +1,3 @@
-#load bad breakup script
-source_github <- function(u) {
-  # load package
-  require(RCurl)
-  
-  # read script lines from website
-  script <- getURL(u, ssl.verifypeer = FALSE)
-  
-  # parase lines and evaluate in the global environment
-  eval(parse(text = script))
-}
-
-source("https://raw.githubusercontent.com/BahlaiLab/bad_breakup_2/master/R_model/bad_breakup_script.R")
 
 #let's clean all these data up!
 #general procedure- import, check, fix obvious errors
@@ -627,7 +614,3 @@ write.csv(sbc.napl.mob.invt, file="cleaned_data/SBC_consumer_minvert_napl.csv", 
 write.csv(sbc.napl.ses.invt, file="cleaned_data/SBC_consumer_sinvert_napl.csv", row.names=FALSE)
 write.csv(sbc.napl.algae, file="cleaned_data/SBC_producer_algae_napl.csv", row.names=FALSE)
 
-#We have a meeting at 12pm :D
-#here we go again :P
-
-#hi sha! we are connected via github now!
