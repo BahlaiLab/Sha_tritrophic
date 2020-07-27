@@ -18,8 +18,9 @@ source("https://raw.githubusercontent.com/BahlaiLab/bad_breakup_2/master/R_model
 
 #now, we conduct the same analysis we did on the firefly case study in the algorithm paper
 
-
+#######################################
 #let's start with the data from Santa Barbara Costal, using the kelp_napl producer data
+# this is where the work starts with this specific dataset- we'll want to do this with each 
 
 kelp_napl<-read.csv(file="cleaned_data/SBC_producer_kelp_napl.csv", header=TRUE)
 
@@ -55,6 +56,8 @@ proportion_wrong(kelp_napl)
 proportion_wrong_before_stability(kelp_napl)
 
 wrongness_plot(kelp_napl)
+
+#number of these figures will depend on the total length of the dataset
 
 broken_stick_plot(kelp_napl, window_length = 3)
 broken_stick_plot(kelp_napl, window_length = 4)
