@@ -77,5 +77,11 @@ broken_stick_plot(kelp_napl, window_length = 17)
 broken_stick_plot(kelp_napl, window_length = 18)
 broken_stick_plot(kelp_napl, window_length = 19)
 
+#create new result frame so we can bring things together
 
+#create the variables we need
+trophic<-rep("producer", length(output_frame$start_year))
+site<-rep("sbc", length(output_frame$start_year))
+treat<-rep("napl", length(output_frame$start_year))
 
+kelp_napl_output<-cbind(site, trophic, treat, output_frame)
