@@ -318,14 +318,14 @@ minvert_napl_time<-ggplot(minvert_napl, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-minvert_napl_time
+minvert_napl_time+ggtitle("Minvert, NAPL site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(minvert_napl)
 #output_frame
-pyramid_plot(minvert_napl, rsq_points=TRUE)
+pyramid_plot(minvert_napl, rsq_points=TRUE)+ggtitle("Minvert, NAPL site")
 stability_time(minvert_napl, min_percent = 95, error_multiplyer = 1)
 relative_range(minvert_napl)
 relative_range_after_stability(minvert_napl)
@@ -333,7 +333,7 @@ proportion_significant(minvert_napl)
 proportion_wrong(minvert_napl)
 proportion_wrong_before_stability(minvert_napl)
 
-wrongness_plot(minvert_napl)
+wrongness_plot(minvert_napl)+ggtitle("Minvert, NAPL site")
 
 #number of these figures will depend on the total length of the dataset
 # 
@@ -386,14 +386,14 @@ minvert_carp_time<-ggplot(minvert_carp, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-minvert_carp_time
+minvert_carp_time+ggtitle("Minvert, CARP site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(minvert_carp)
 #output_frame
-pyramid_plot(minvert_carp, rsq_points=TRUE)
+pyramid_plot(minvert_carp, rsq_points=TRUE)+ggtitle("Minvert, CARP site")
 stability_time(minvert_carp, min_percent = 95, error_multiplyer = 1)
 relative_range(minvert_carp)
 relative_range_after_stability(minvert_carp)
@@ -401,7 +401,7 @@ proportion_significant(minvert_carp)
 proportion_wrong(minvert_carp)
 proportion_wrong_before_stability(minvert_carp)
 
-wrongness_plot(minvert_carp)
+wrongness_plot(minvert_carp)+ggtitle("Minvert, CARP site")
 
 #number of these figures will depend on the total length of the dataset
 # 
@@ -455,14 +455,14 @@ sinvert_napl_time<-ggplot(sinvert_napl, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-sinvert_napl_time
+sinvert_napl_time+ggtitle("Sinvert, NAPL site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(sinvert_napl)
 #output_frame
-pyramid_plot(sinvert_napl, rsq_points=TRUE)
+pyramid_plot(sinvert_napl, rsq_points=TRUE)+ggtitle("Sinvert, NAPL site")
 stability_time(sinvert_napl, min_percent = 95, error_multiplyer = 1)
 relative_range(sinvert_napl)
 relative_range_after_stability(sinvert_napl)
@@ -470,7 +470,7 @@ proportion_significant(sinvert_napl)
 proportion_wrong(sinvert_napl)
 proportion_wrong_before_stability(sinvert_napl)
 
-wrongness_plot(sinvert_napl)
+wrongness_plot(sinvert_napl)+ggtitle("Sinvert, NAPL site")
 
 #number of these figures will depend on the total length of the dataset
 # 
@@ -523,14 +523,14 @@ sinvert_carp_time<-ggplot(sinvert_carp, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-sinvert_carp_time
+sinvert_carp_time+ggtitle("Sinvert, CARP site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(sinvert_carp)
 #output_frame
-pyramid_plot(sinvert_carp, rsq_points=TRUE)
+pyramid_plot(sinvert_carp, rsq_points=TRUE)+ggtitle("Sinvert, CARP site")
 stability_time(sinvert_carp, min_percent = 95, error_multiplyer = 1)
 relative_range(sinvert_carp)
 relative_range_after_stability(sinvert_carp)
@@ -538,7 +538,7 @@ proportion_significant(sinvert_carp)
 proportion_wrong(sinvert_carp)
 proportion_wrong_before_stability(sinvert_carp)
 
-wrongness_plot(sinvert_carp)
+wrongness_plot(sinvert_carp)+ggtitle("Sinvert, CARP site")
 
 #number of these figures will depend on the total length of the dataset
 # 
@@ -593,14 +593,14 @@ fish_napl_time<-ggplot(fish_napl, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-fish_napl_time
+fish_napl_time+ggtitle("Fish, NAPL site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(fish_napl)
 #output_frame
-pyramid_plot(fish_napl, rsq_points=TRUE)
+pyramid_plot(fish_napl, rsq_points=TRUE)+ggtitle("Fish, NAPL site")
 stability_time(fish_napl, min_percent = 95, error_multiplyer = 1)
 relative_range(fish_napl)
 relative_range_after_stability(fish_napl)
@@ -608,7 +608,7 @@ proportion_significant(fish_napl)
 proportion_wrong(fish_napl)
 proportion_wrong_before_stability(fish_napl)
 
-wrongness_plot(fish_napl)
+wrongness_plot(fish_napl)+ggtitle("Fish, NAPL site")
 
 #number of these figures will depend on the total length of the dataset
 # 
@@ -661,14 +661,14 @@ fish_carp_time<-ggplot(fish_carp, aes(YEAR, biomass))+
         panel.grid.minor = element_blank())+
   xlab("\nYear")+
   ylab("biomass \n")
-fish_carp_time
+fish_carp_time+ggtitle("Fish, CARP site")
 
 
 #here goes nothing
 
 output_frame<-multiple_breakups(fish_carp)
 #output_frame
-pyramid_plot(fish_carp, rsq_points=TRUE)
+pyramid_plot(fish_carp, rsq_points=TRUE)+ggtitle("Fish, CARP site")
 stability_time(fish_carp, min_percent = 95, error_multiplyer = 1)
 relative_range(fish_carp)
 relative_range_after_stability(fish_carp)
@@ -676,7 +676,7 @@ proportion_significant(fish_carp)
 proportion_wrong(fish_carp)
 proportion_wrong_before_stability(fish_carp)
 
-wrongness_plot(fish_carp)
+wrongness_plot(fish_carp)+ggtitle("Fish, CARP site")
 
 #number of these figures will depend on the total length of the dataset
 # 
