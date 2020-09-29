@@ -23,7 +23,7 @@ source("https://raw.githubusercontent.com/BahlaiLab/bad_breakup_2/master/R_model
 # this is where the work starts with this specific dataset- we'll want to do this with each 
 
 
-#algae napl
+#Kelp napl
 kelp_napl<-read.csv(file="cleaned_data/SBC_producer_kelp_napl.csv", header=TRUE)
 
 
